@@ -22,13 +22,13 @@ function addItem()
     // create a variable called dollars
     document.getElementById("subtotal").innerHTML=dollars;
     newItem= document.getElementById("price").value="";
-    setCookie(preTax, runningTotal, 3)
+    setCookie("preTax", runningTotal, 3);
+      console.log(getCookie("preTax"));
+
 
     // call asCurrency() by with the value of runningTotal and assign the return value to dollars
 
   }
-
-
 
   // update the innerHTML of the span with the id "subtotal" to be dollars
   // update the value of the input with the id "price" to be an empty string
